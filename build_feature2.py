@@ -7,7 +7,7 @@ import scipy.fftpack
 from math import log
 import new_process
 
-origin_data = pd.read_csv('tIOSBTC.csv')
+origin_data = pd.read_csv('tLTCUSD.csv')
 fisher_transform = []
 for x in origin_data['PRICE']:
     fisher = 0.5*log(abs((1+x)/(1-x)))
@@ -16,9 +16,9 @@ for x in origin_data['PRICE']:
 origin_data['fisher_transform'] = pd.Series(fisher_transform)
 origin_data['fft'] = pd.Series(np.fft.fft(origin_data['PRICE']))
 
-origin_data.to_csv('tIOSBTC_FT_FFT.csv',index=False)
+origin_data.to_csv('tLTCUSD_FT_FFT.csv',index=False)
 
-origin_data = pd.read_csv('tIOSBTC.csv')
+origin_data = pd.read_csv('tLTCUSD.csv')
 
 origin_data.columns=['ID','MTS','AMOUNT','price']
 
@@ -33,7 +33,7 @@ coe = [1,2,3,4,5,6,7,8,9,10]
 
 sma_ewm = SMA_EWM.combine(SMA_EWM.cal_SMA(bitdata,size),SMA_EWM.cal_EWM(bitdata,size,coe))
 
-feature_minute.to_csv('tIOSBTC_feature_minute.csv',index=False)
-feature_hour.to_csv('tIOSBTC_feature_hour.csv',index=False)
+feature_minute.to_csv('tLTCUSD_feature_minute.csv',index=False)
+feature_hour.to_csv('tLTCUSD_feature_hour.csv',index=False)
 
-sma_ewm.to_csv('tIOSBTC_sma_ewm.csv',index=False)
+sma_ewm.to_csv('tLTCUSD_sma_ewm.csv',index=False)
