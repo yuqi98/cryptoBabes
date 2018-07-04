@@ -22,8 +22,12 @@ feature_minute.csv  -- open, close, high, low, average of each minute
 feature_hour.csv  -- open, close, high, low, average of each hour
 sma_ewm.csv -- sma and ewm data based on the preprocessed data with dates
 
-4. 4 coins pair extract -
-Yuqi - use get_trades.py to extract 4 coins pair, saved as tBTCUSD_trades.parquet, tEOSUSD_trades.parquet, 
+4. four coins pair extract and preprocess the data -
+Yuqi - use get_trades.py to extract 4 coins pair, saved as tBTCUSD_trades.parquet, tEOSUSD_trades.parquet, tETCUSD_trades.parquet, tLTCUSD_trades.parquet
+     
+     - use read_parquet.ipynb to change all parquet file to csv file, saved as tBTCUSD.csv, tEOSUSD.csv, tETCUSD.csv, tLTCUSD.csv
+     
+     - use build_feature2.py to preprocess all the file as we did before, and get 4 csv file for each coin pair, saved in the folder part2
 
 
 5. Plotting - 
