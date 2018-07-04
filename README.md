@@ -46,10 +46,16 @@ Deployment of web app done by Yuqi.
 
 Access it using this link -- https://dash-bitcoin.herokuapp.com/   (build the heroku account and developed using venv in local computer, didn't upload the code because it is another repository)
 
-5. Twitter sentiment analysis - 
-Bassim
 
-6. Reddit bitcoin thread sentiment analysis - 
-Bassim
+5. Twitter and Reddit sentiment analysis - 
+Bassim - Analysis done for the period between 27th June to the 28th of June
+
+Used twitter api to parse 50 tweets to analyze sentiment of general public over bitcoin. Then parsed sentiment of other cryptocurrencies. General sentiment was positive.
+
+Used reddit api praw to analyze the sentiment of all comments in thread on Bitcoin for the same time period. General sentiment was positive.
+
+
+
+
 
 
