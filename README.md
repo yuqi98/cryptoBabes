@@ -17,7 +17,9 @@ Yuqi  - compiled all functions to a single python script
 4. Plotting - 
 Yuqi - Extraced coin pair data using script, plotted using interactive candlestick graphs via Plotly
 Surbhi - plotted from original feature engineered data
-Bassim - created a web framework using dash to present interactive plots of coin pairs. Deployment of web app done by Yuqi. Access it using this link -- https://dash-bitcoin.herokuapp.com/
+Bassim - created a web framework using dash to present interactive plots of coin pairs. Deployment of web app done by Yuqi. 
+
+Access it using this link -- https://dash-bitcoin.herokuapp.com/
 
 5. Twitter sentiment analysis - 
 Bassim
