@@ -37,13 +37,13 @@ Yuqi - use get_trades.py to extract 4 coins pair, saved as tBTCUSD_trades.parque
 
 5. Plotting - 
 
-Yuqi - plotted using interactive candlestick graphs via Plotly (saved as plotly.ipynb)
+Yuqi - plotted the time and price of 4 coin pair using interactive candlestick graphs via Plotly (saved as plotly.ipynb) (all data used is saved in folder part2)
 
 Surbhi - plotted based on price and time, and feature of sell
 
 Bassim - created a web framework using dash to present interactive plots of coin pairs. Deployment of web app done by Yuqi. 
 
-Access it using this link -- https://dash-bitcoin.herokuapp.com/
+Access it using this link -- https://dash-bitcoin.herokuapp.com/   (build the heroku account and developed using venv in local computer, didn't upload the code because it is another repository)
 
 5. Twitter sentiment analysis - 
 Bassim
