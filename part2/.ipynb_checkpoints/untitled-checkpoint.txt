@@ -1,9 +1,14 @@
+
+    
+    
+import datetime
 import dash
-import dash_html_components as html
 import dash_core_components as dcc
+import dash_html_components as html
 import pandas as pd
 
 app = dash.Dash()
+
 
 df = pd.read_csv('part2/tEOSUSD_feature_minute.csv')
 df1 = pd.read_csv('part2/tBTCUSD_feature_minute.csv')
@@ -18,13 +23,13 @@ df2.set_index("hour_minute", inplace=True)
 df3.reset_index(inplace=True)
 df3.set_index("hour_minute", inplace=True)
 
+app.layout = html.Div(children=[
+    html.H1(children='Whoa, a graph!'),
 
-app.layout = html.Div([
-<<<<<<< HEAD
-    html.H1('Data visualization of four coin pairs', className='eight columns offset-by-two',style={'text-align': 'center','text-decoration': 'underline', 'font-family':'Courier'}),
-=======
-    html.H1('Hello Dash'),
->>>>>>> a96fc3018ca6c174c39eb2156f3b2bd1133a29a5
+    html.Div(children='''
+        Making a stock graph!.
+    '''),
+
     dcc.Graph(
         id='EOSUSD',
         figure={
@@ -97,10 +102,8 @@ app.layout = html.Div([
                 'title': 'BTCUSD'
             }
         }
-    ),
-    html.Div(id='output-container')
+    )
 ])
-
 
 if __name__ == '__main__':
     app.run_server(debug=True)

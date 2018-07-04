@@ -18,13 +18,18 @@ df2.set_index("hour_minute", inplace=True)
 df3.reset_index(inplace=True)
 df3.set_index("hour_minute", inplace=True)
 
-
 app.layout = html.Div([
-<<<<<<< HEAD
-    html.H1('Data visualization of four coin pairs', className='eight columns offset-by-two',style={'text-align': 'center','text-decoration': 'underline', 'font-family':'Courier'}),
-=======
-    html.H1('Hello Dash'),
->>>>>>> a96fc3018ca6c174c39eb2156f3b2bd1133a29a5
+    
+    dcc.Dropdown(
+        id='my-dropdown',
+        options=[
+            {'label': 'BTCUSD', 'value': 'BTCUSD'},
+            {'label': 'EOSUSD', 'value': 'EOSUSD'},
+            {'label': 'ETCUSD', 'value': 'ETCUSD'},
+            {'label': 'LTCUSD', 'value': 'LTCUSD'}
+        ],
+        value='BTCUSD'
+    ),
     dcc.Graph(
         id='EOSUSD',
         figure={
@@ -100,6 +105,14 @@ app.layout = html.Div([
     ),
     html.Div(id='output-container')
 ])
+
+
+@app.callback(
+    dash.dependencies.Output('output-container', 'children'),
+    [dash.dependencies.Input('my-dropdown', 'value')])
+def update_output(value):
+    if value == 'BTCUSD':
+        print ('yes')
 
 
 if __name__ == '__main__':
