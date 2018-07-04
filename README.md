@@ -52,8 +52,12 @@ Bassim - Analysis done for the period between 27th June to the 28th of June
 
 Used twitter api to parse 50 tweets to analyze sentiment of general public over bitcoin. Then parsed sentiment of other cryptocurrencies. General sentiment was positive.
 
+-- Bitcoin sentiment analysis - general public.ipynb
+-- Bitcoin sentiment analysis - experts.ipynb
+
 Used reddit api praw to analyze the sentiment of all comments in thread on Bitcoin for the same time period. General sentiment was positive.
 
+-- reddit_scraping.ipynb
 
 
 
