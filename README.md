@@ -41,7 +41,8 @@ Yuqi - plotted the time and price of 4 coin pair using interactive candlestick g
 
 Surbhi - plotted based on price and time, and feature of sell
 
-Bassim - created a web framework using dash to present interactive plots of coin pairs. Deployment of web app done by Yuqi. 
+Bassim - created a web framework using dash to present interactive plots of coin pairs. 
+Deployment of web app done by Yuqi. 
 
 Access it using this link -- https://dash-bitcoin.herokuapp.com/   (build the heroku account and developed using venv in local computer, didn't upload the code because it is another repository)
 
